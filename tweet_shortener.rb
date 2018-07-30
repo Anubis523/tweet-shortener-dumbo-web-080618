@@ -30,5 +30,7 @@ end
 def selective_tweet_shortener (tweet)
   if (tweet.size > 140)
     tweet.chars[0...140].join
+  else
+    tweet
   end
 end
