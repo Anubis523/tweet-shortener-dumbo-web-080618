@@ -14,7 +14,7 @@ def dictionary (word)
   }
   dict.each do |k, v|
     if(!dict[k.capitalize])
-      dict[k.capitalize] = dict[k]
+      dict[k.capitalize] = v
     end
   end
   dict[word] || word
