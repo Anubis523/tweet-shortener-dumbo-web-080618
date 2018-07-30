@@ -12,7 +12,7 @@ def dictionary (word)
     'at' => '@',
     'and' => '&'
   }
-  dict[word].downcase || word
+  dict[word] || word
 end
 def word_substituter (tweet)
   tweet.split(' ').map do |word|
