@@ -28,7 +28,7 @@ def bulk_tweet_shortener (tweets)
 end
 
 def selective_tweet_shortener (tweet)
-  if (tweet.size > 140 && tweet.size < 130 == false)
+  if (tweet.size > 140)
     tweet.chars[0...140].join
   end
 end
