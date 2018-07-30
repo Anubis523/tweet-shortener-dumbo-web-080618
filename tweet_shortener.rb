@@ -15,7 +15,7 @@ def dictionary (word)
   dict[word] || word
 end
 def word_substituter (tweet)
-  tweet.to_s.split(' ').map do |word|
+  tweet.split(' ').map do |word|
     dictionary(word)
   end.join(' ')
 end
