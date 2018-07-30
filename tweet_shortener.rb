@@ -12,6 +12,9 @@ def dictionary (word)
     'at' => '@',
     'and' => '&'
   }
+  dict.each do |k, v|
+    
+  end
   dict[word] || word
 end
 def word_substituter (tweet)
