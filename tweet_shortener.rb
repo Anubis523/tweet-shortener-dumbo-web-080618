@@ -13,11 +13,6 @@ def dictionary (word)
     'at' => '@',
     'and' => '&'
   }
-  # dict.each do |k, v|
-  #   if(!dict[k.capitalize])
-  #     dict[k.capitalize] = v
-  #   end
-  # end
   dict[word] || word
 end
 def word_substituter (tweet)
