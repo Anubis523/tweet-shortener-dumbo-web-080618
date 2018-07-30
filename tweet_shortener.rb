@@ -25,3 +25,10 @@ def bulk_tweet_shortener (tweet)
   puts word_substituter(tweet)
 end
 
+def selective_tweet_shortener (tweet)
+  if (tweet.size > 140)
+    tweet.chars[0...140].join
+  elsif (tweet.size < 130)
+    tweet
+  end
+end
