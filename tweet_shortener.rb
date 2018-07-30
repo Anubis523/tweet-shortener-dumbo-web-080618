@@ -13,7 +13,7 @@ def dictionary (word)
     'and' => '&'
   }
   dict.each do |k, v|
-    if(dict[k.capitalize] == nil)
+    if(!dict[k.capitalize])
       dict[k.capitalize] = dict[k]
     end
   end
